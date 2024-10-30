@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2022 Ryuichi Ueda
+# SPDX-License-Identifier: BSD-3-Clause
+
 import sys
 
-ans = 0.0
+ans = 0
 for line in sys.stdin:
     line = line.rstrip()
     try:
