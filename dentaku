@@ -1,0 +1,90 @@
+#!/usr/bin/python3
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+import math
+
+def main():
+    pi = 3.14159265358979
+    mode = 5
+    a = 0
+    
+    while True:
+        if mode == 5:
+            print("モードを選択してください: 1: 四則演算, 2: 関数, 9: 特殊計算")
+            mode = int(input())
+
+        if mode == 1:
+            a = float(input("数字を入力してください: "))
+            while True:
+                ope, b = input("演算子と数字を入力してください: ").split()
+                b = float(b)
+                if ope == '+': a += b
+                elif ope == '-': a -= b
+                elif ope == '*': a *= b
+                elif ope == '/': a /= b
+                elif ope == '?': mode = 4; break
+                elif ope == '$': print(f"結果 = {a}"); mode = 5; break
+                else: print("error")
+                print(f"={a}")
+
+        elif mode == 2:
+            ope, a = input("関数と数字を入力してください: ").split()
+            a = float(a)
+            if ope == 's': a = math.sin(math.radians(a))
+            elif ope == 'c': a = math.cos(math.radians(a))
+            elif ope == 't': a = math.tan(math.radians(a))
+            elif ope == 'S': a = math.asin(math.radians(a))
+            elif ope == 'C': a = math.acos(math.radians(a))
+            elif ope == 'T': a = math.atan(math.radians(a))
+            elif ope == 'l': a = math.log10(a)
+            elif ope == 'e': a = math.log(a)
+            elif ope == 'k': a = math.pow(a, a)
+            elif ope == 'h': a = math.sqrt(a)
+            elif ope == 'H': a = math.cbrt(a)
+            else: print("error")
+            print(f"={a}")
+            mode = 3
+
+        elif mode == 3:
+            while True:
+                ope2, ope, b = input("演算子、関数、数字を入力してください: ").split()
+                b = float(b)
+                if ope == 's': b = math.sin(math.radians(b))
+                elif ope == 'c': b = math.cos(math.radians(b))
+                elif ope == 't': b = math.tan(math.radians(b))
+                elif ope == 'S': b = math.asin(math.radians(b))
+                elif ope == 'C': b = math.acos(math.radians(b))
+                elif ope == 'T': b = math.atan(math.radians(b))
+                elif ope == 'l': b = math.log10(b)
+                elif ope == 'e': b = math.log(b)
+                elif ope == 'k': b = math.pow(b, b)
+                elif ope == 'h': b = math.sqrt(b)
+                elif ope == 'H': b = math.cbrt(b)
+
+                if ope2 == '+': a += b
+                elif ope2 == '-': a -= b
+                elif ope2 == '*': a *= b
+                elif ope2 == '/': a /= b
+                elif ope2 == '?': mode = 4; break
+                elif ope2 == '$': print(f"結果 = {a}"); mode = 5; break
+                else: print("error")
+                print(f"={a}")
+
+        elif mode == 9:
+            while True:
+                n, ope, x = input("数字, 演算子(べき乗/指数/引数), 数字を入力してください: ").split()
+                n, x = float(n), float(x)
+                if ope == '^': print(f"={math.pow(n, x)}")
+                elif ope == '!': print(f"={math.factorial(int(n))}")
+                elif ope == 'P': print(f"={math.prod(range(int(n), int(n - x), -1))}")
+                elif ope == 'C': print(f"={math.comb(int(n), int(x))}")
+                elif ope == '?': mode = 4; break
+                else: print("error")
+
+        elif mode == 4:
+            break
+
+if __name__ == "__main__":
+    main()
+
