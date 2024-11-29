@@ -1,6 +1,6 @@
 # square rootコマンド
 
-![test](https://github.com/eLu-0912/robosys2024/actions/workflows/test.yml/badge.svg)
+[![test](https://github.com/eLu-0912/robosys2024/actions/workflows/test.yml/badge.svg)]((https://github.com/eLu-0912/robosys2024/actions/workflows/test.yml)
 
 ##概要
 標準入力から読み込んだ数字の平方根を出力する。
@@ -13,10 +13,19 @@
 - ubuntu 22.04
 
 ##使用方法
-以下の手順でプロジェクトを
+以下の手順でプロジェクトを使用してください。
+githubリポジトリから以下のようにインストールしてください。
+git clone git@github.com:eLu-0912/robosys2024.git
+cd B/robosys2024
+
+githubアカウントがない方は以下のように
+git clone https://github.com/eLu-0912/robosys2024.git
+cd B/robosys2024
+
+'square' スクリプトを実行可能にしてください。
+chmod +x square
 
 ##使い方
-
 使用例
 seq 9 | ./square
 実行結果
