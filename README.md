@@ -1,6 +1,6 @@
 # square rootコマンド
 
-[![test](https://github.com/eLu-0912/robosys2024/actions/workflows/test.yml/badge.svg)((https://github.com/eLu-0912/robosys2024/actions/workflows/test.yml)
+[![test](https://github.com/eLu-0912/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/eLu-0912/robosys2024/actions/workflows/test.yml)
 
 
 ## 概要
