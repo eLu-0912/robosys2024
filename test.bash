@@ -14,7 +14,7 @@ res=0
 out=$(seq 4 | ./squareroot)
 [ "${out}" = 2.0 ] || ng "$LINENO"
 
-out=$(seq 9 | ./square)
+out=$(seq 9 | ./squareroot)
 [ "${out}" = "3.0" ] || ng "$LINENO"
 
 out=$(echo あ | ./squareroot)
