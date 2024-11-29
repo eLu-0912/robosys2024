@@ -1,5 +1,4 @@
-#!/bin/bash
-# SPDX-License-Identifier: BSD-3-Clause
+#!/bin/bash -xv
 
 
 ng () {
@@ -10,18 +9,18 @@ ng () {
 res=0
 
 
-out=$(seq 4 | ./log)
+out=$(seq 4 | ./square)
 [ "${out}" = 2.0 ] || ng "$LINENO"
 
-out=$(seq 9 | ./log)
+out=$(seq 9 | ./square)
 [ "${out}" = "3.0" ] || ng "$LINENO"
 
 
-out=$(echo あ | ./log)
+out=$(echo あ | ./square)
 [ "$?" = 1 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
-out=$(echo  "" | ./log)
+out=$(echo  "" | ./square)
 [ "$?" = 1 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
