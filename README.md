@@ -22,30 +22,31 @@
 
 - 以下の手順でプロジェクトを使用してください。
 - githubリポジトリから以下のようにインストールしてください。
-- 下記のコードをホームディレクトリでクローンしてください。
 
-```
-$ git clone git@github.com:eLu-0912/robosys2024.git
-$ cd robosys2024
-```
-
-- githubアカウントがない方は以下のように
+- リポジトリをクローンしてください。
 ```
 $ git clone https://github.com/eLu-0912/robosys2024.git
-$ cd robosys2024
+```
+- github アカウントがある方はこちらでも可能です。
+```
+$ git clone git@github.com:eLu-0912/robosys2024.git
 ```
 
+- ディレクトリに移動してください。
+```
+$ cd robosys2024
+```
 
 - 'square' スクリプトを実行可能にしてください。
 ```
-$ chmod +x square
+$ chmod +x squareroot
 ```
 
 ## 使い方
 
 - 入力例1
 ```
-$ seq 9 | ./square
+$ seq 9 | ./squareroot
 ```
 
 - 実行結果
@@ -55,7 +56,7 @@ $ seq 9 | ./square
 
 - 入力例2
 ```
-echo -e "81" | ./square
+echo -e "81" | ./squareroot
 ```
 
 - 実行結果

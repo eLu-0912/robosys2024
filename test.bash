@@ -1,4 +1,6 @@
 #!/bin/bash -xv
+# SPDX-FileCopyrightText: 2024 Takeru Harashima
+# SPDX-License-Identifier: BSD-3-Clause
 
 
 ng () {
@@ -9,18 +11,17 @@ ng () {
 res=0
 
 
-out=$(seq 4 | ./square)
+out=$(seq 4 | ./squareroot)
 [ "${out}" = 2.0 ] || ng "$LINENO"
 
 out=$(seq 9 | ./square)
 [ "${out}" = "3.0" ] || ng "$LINENO"
 
-
-out=$(echo あ | ./square)
+out=$(echo あ | ./squareroot)
 [ "$?" = 1 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
-out=$(echo  "" | ./square)
+out=$(echo  "" | ./squareroot)
 [ "$?" = 1 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
