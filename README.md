@@ -1,6 +1,6 @@
 # square rootコマンド
 
-[![test](https://github.com/eLu-0912/robosys2024/actions/workflows/test.yml/badge.svg)]((https://github.com/eLu-0912/robosys2024/actions/workflows/test.yml)
+[![test](https://github.com/eLu-0912/robosys2024/actions/workflows/test.yml/badge.svg)((https://github.com/eLu-0912/robosys2024/actions/workflows/test.yml)
 
 
 ## 概要
@@ -25,13 +25,13 @@
 - 下記のコードをホームディレクトリでクローンしてください。
 ```
 $ git clone git@github.com:eLu-0912/robosys2024.git
-$ cd B/robosys2024
+$ cd robosys2024
 ```
 
 - githubアカウントがない方は以下のように
 ```
 $ git clone https://github.com/eLu-0912/robosys2024.git
-$ cd B/robosys2024
+$ cd robosys2024
 ```
 
 
