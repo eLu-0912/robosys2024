@@ -17,7 +17,11 @@ def main():
         if mode == 1:
             a = float(input("数字を入力してください: "))
             while True:
-                ope, b = input("演算子と数字を入力してください: ").split()
+                try:
+                    ope, b = input("演算子と数字を入力してください: ").split()
+                    break
+                except ValueError:
+                    print("無効な入力です。整数を入力してください。")
                 b = float(b)
                 if ope == '+': a += b
                 elif ope == '-': a -= b
@@ -87,4 +91,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
