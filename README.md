@@ -18,11 +18,12 @@
 - ubuntu 22.04 LTS
 
 
-## インストール方法
+## 使用準備
 
 - 以下の手順でプロジェクトを使用してください。
 - githubリポジトリから以下のようにインストールしてください。
 - 下記のコードをホームディレクトリでクローンしてください。
+
 ```
 $ git clone git@github.com:eLu-0912/robosys2024.git
 $ cd robosys2024
@@ -46,6 +47,7 @@ $ chmod +x square
 ```
 $ seq 9 | ./square
 ```
+
 - 実行結果
 ```
 3.0
@@ -55,7 +57,8 @@ $ seq 9 | ./square
 ```
 echo -e "81" | ./square
 ```
--　実行結果
+
+- 実行結果
 ```
 9.0
 ```
@@ -63,5 +66,5 @@ echo -e "81" | ./square
 ## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます.
 - このパッケージのコードの一部は，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
-    - [ryuichiueda/slides_marp/robosys2024/lesson7.md](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2024)
+    - [ryuichiueda/slides_marp/robosys2024](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2024)
 - ©2024 Takeru Harashima
