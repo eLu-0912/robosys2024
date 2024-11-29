@@ -36,7 +36,7 @@ $ cd robosys2024
 ```
 
 
-'square' スクリプトを実行可能にしてください。
+- 'square' スクリプトを実行可能にしてください。
 ```
 $ chmod +x square
 ```
