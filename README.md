@@ -1,4 +1,4 @@
-# square rootコマンド
+# squarerootコマンド
 
 [![test](https://github.com/eLu-0912/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/eLu-0912/robosys2024/actions/workflows/test.yml)
 
@@ -20,7 +20,7 @@
 
 ## 使用準備
 
-- 以下の手順でプロジェクトを使用してください。
+- 以下の手順で行ってください。
 
 - リポジトリをクローンしてください。
 ```
